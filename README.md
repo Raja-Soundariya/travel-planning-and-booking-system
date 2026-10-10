@@ -56,30 +56,62 @@ The Travel Planning and Booking System is a web application developed using the 
 
 ## Project Structure
 
-
-node_modules/
-frontend/node_modules/
-backend/node_modules/
-
-.env
-.env.*
-!.env.example
-frontend/.env
-backend/.env
-
-dist/
-build/
-coverage/
-
-*.log
-*.pem
-*.key
-*.p12
-*.pfx
-
-.DS_Store
-Thumbs.db
-
+VIGNESH_TOURS_MERN/
+│
+├── backend/
+│   ├── config/
+│   │   └── db.js
+│   │
+│   ├── controllers/
+│   │
+│   ├── middleware/
+│   │
+│   ├── models/
+│   │
+│   ├── routes/
+│   │   ├── adminRoutes.js
+│   │   ├── authRoutes.js
+│   │   ├── bookingRoutes.js
+│   │   └── packageRoutes.js
+│   │
+│   ├── scripts/
+│   │
+│   ├── uploads/
+│   │
+│   ├── .env
+│   ├── package.json
+│   └── server.js
+│
+├── frontend/
+│   ├── public/
+│   │
+│   ├── src/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   │   ├── user/
+│   │   │   │   ├── Home.jsx
+│   │   │   │   ├── Login.jsx
+│   │   │   │   ├── Register.jsx
+│   │   │   │   ├── Packages.jsx
+│   │   │   │   ├── PackageDetails.jsx
+│   │   │   │   ├── Booking.jsx
+│   │   │   │   └── BookingSuccess.jsx
+│   │   │   │
+│   │   │   └── admin/
+│   │   │       ├── AdminDashboard.jsx
+│   │   │       ├── AddPackage.jsx
+│   │   │       ├── EditPackage.jsx
+│   │   │       ├── ManageOffers.jsx
+│   │   │       └── ManageBookings.jsx
+│   │   │
+│   │   ├── services/
+│   │   └── data/
+│   │
+│   ├── package.json
+│   └── vite.config.js
+│
+├── README.md
+└── .gitignore
 
 *Note: The folder structure above is illustrative. Update it to match your actual project.*
 
