@@ -56,20 +56,30 @@ The Travel Planning and Booking System is a web application developed using the 
 
 ## Project Structure
 
-```text
-travel-planning-and-booking-system/
-├── frontend/
-│   ├── public/
-│   └── src/
-├── backend/
-│   ├── controllers/
-│   ├── models/
-│   ├── routes/
-│   ├── middleware/
-│   └── server.js
-├── .gitignore
-└── README.md
-```
+
+node_modules/
+frontend/node_modules/
+backend/node_modules/
+
+.env
+.env.*
+!.env.example
+frontend/.env
+backend/.env
+
+dist/
+build/
+coverage/
+
+*.log
+*.pem
+*.key
+*.p12
+*.pfx
+
+.DS_Store
+Thumbs.db
+
 
 *Note: The folder structure above is illustrative. Update it to match your actual project.*
 
